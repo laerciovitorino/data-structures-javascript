@@ -8,3 +8,7 @@ function Node(value, next, prev) {
   this.next = next;
   this.prev = prev;
 }
+
+LinkedList.prototype.addToHead = function(value) {
+  var newNode = new Node(value, this.head, null);
+}
